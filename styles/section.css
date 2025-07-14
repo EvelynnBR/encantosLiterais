@@ -80,27 +80,89 @@
     & header{
         text-align: center;
         position: relative;
+        gap: .5rem;
 
         & > div{
             align-items: center;
+            gap: .75rem;
             justify-content: center;
 
             & h2{
                 color: var(--text-primary);
                 font: var(--title-sm);
-                margin-bottom: 1rem;
+            }
+
+            & img{
+                width: 1.25rem;
             }
         }
         & small{
-            position: absolute;
+
             color: var(--text-secondary);
             font: var(--text-sm);
+        }
+    }
 
+    & .books{
+        position: relative;
+        margin-block: 4rem;
+        height: 20rem;
+        padding-inline: 0.5rem;
+
+        & img:nth-child(1){
+            position: absolute;
+            width: 9.82rem;
             left: 50%;
-            bottom: 1px;
+            top: 50%;;
+            transform: translate(-50%, -50%);
+            z-index: 8;
+        }
+        & img:nth-child(2){
+            position: absolute;
+            width: 5.56rem;
+            top: 2.2rem;
+            left: 1rem;
+            z-index: 7;
+        }
+        & img:nth-child(3){
+            position: absolute;
+            width: 5.56rem;
+            bottom: 1rem;
+            left: 2rem;
 
-            width: 25rem;
-            transform: translate(-50%);
+            z-index: 6;
+        }
+        & img:nth-child(4){
+            position: absolute;
+            width: 4rem;
+            bottom: 5.5rem; 
+            z-index: 5;
+        }
+        & img:nth-child(5){
+            position: absolute;
+            width: 4rem;
+            top: 2.5rem;
+            right: 2.8rem; 
+
+            transform: rotate(10deg);
+            z-index: 4;
+        }
+        & img:nth-child(6){
+            position: absolute;
+            width: 4rem;
+            top: 4.5rem;
+            right: 0.4rem; 
+
+            transform: rotate(20deg);
+            z-index: 3;
+        }
+        & img:nth-child(7){
+            position: absolute;
+            width: 4rem;
+            bottom: 2rem;
+            right: 1.3rem; 
+
+            z-index: 2;
         }
     }
 }
@@ -170,6 +232,100 @@ section + section{
             width: fit-content;
         }
         
+    }
+
+    .feature{
+        & header{
+            text-align: center;
+            position: relative;
+            gap: .5rem;
+
+            & > div{
+                align-items: center;
+                gap: .75rem;
+                justify-content: center;
+
+                & h2{
+                    color: var(--text-primary);
+                    font: var(--title-sm);
+                }
+
+                & img{
+                    width: 1.25rem;
+                }
+            }
+            & small{
+
+                color: var(--text-secondary);
+                font: var(--text-sm);
+            }
+        }
+
+        & .books{
+            position: relative;
+            margin-block: 4rem;
+            height: 57.5rem;
+            padding-inline: 0.5rem;
+
+            & img:nth-child(1){
+                position: absolute;
+                width: 29rem;
+                left: 50%;
+                top: 50%;;
+                transform: translate(-50%, -50%);
+                z-index: 8;
+            }
+            & img:nth-child(2){
+                position: absolute;
+                width: 15.875rem;
+                top: 6rem;
+                left: 11rem;
+                z-index: 7;
+            }
+            & img:nth-child(3){
+                position: absolute;
+                width: 12rem;
+                bottom: 6rem;
+                left: 16.5rem;
+
+                z-index: 6;
+            }
+            & img:nth-child(4){
+                position: absolute;
+                width: 7.875rem;
+                bottom: 17rem; 
+                left: 12.5rem;
+                z-index: 5;
+            }
+            & img:nth-child(5){
+                position: absolute;
+                width: 10.75rem;
+                height: 33.5rem;
+                top: 5.5rem;
+                right: 17rem; 
+
+                transform: rotate(10deg);
+                z-index: 4;
+            }
+            & img:nth-child(6){
+                position: absolute;
+                width: 10.75rem;
+                height: 33.5rem;
+                top: 12rem;
+                right: 10.5rem; 
+
+                transform: rotate(18deg);
+                z-index: 3;
+            }
+            & img:nth-child(7){
+                position: absolute;
+                width: 14.625rem;
+                bottom: 2rem;
+                right: 13rem; 
+
+                z-index: 2;
+            }
+        }
     }
 
     section + section{
