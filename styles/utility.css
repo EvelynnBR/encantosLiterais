@@ -1,0 +1,70 @@
+.container{
+    --max-width: 375px;
+    width: var(--max-width);
+    padding: var(--px-lg);
+    margin-inline: auto;
+}
+@media (width >= 80em){
+    .container{
+        --max-width: 80em;
+    }
+}
+
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    font: var(--button);
+    color: var(--text-primary);
+}
+
+body{
+    background-color: var(--shape-bg);
+}
+
+.btn-primary{
+    padding: .75rem 1.25rem;
+    background-color: var(--pink-dark);
+    border-radius: .5rem;
+    position: relative;
+    
+    &::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        transform: scale(0);
+        transition : transform 0.4s ease;
+        background-color: var(--pink-base);
+        border-radius: inherit;
+
+    }
+    &:hover::before{
+        transform: scale(1);
+    }
+
+    &::after{
+        content: "Assinar";
+        z-index: 10;
+        position: relative;
+    }
+}
+.gap-1{
+    gap: 1rem;
+}
+
+h1{
+    font: var(--title-lg);
+    color: var(--text-primary);
+}
+p{
+    font: var(--text-md);
+    color: var(--text-tertiary);
+}
+
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}
