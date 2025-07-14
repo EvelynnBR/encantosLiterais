@@ -1,0 +1,178 @@
+#hero{
+    height: 29rem;
+    background: url(../assets/bg-mobile.png) no-repeat center top;
+
+    & header{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    & > div{
+        margin-top: 3rem;
+        text-align: center;
+    }
+}
+
+.about{
+    justify-content: center;
+    padding-block: 2rem ;
+    position: relative;
+
+    & .ico-book{
+        position: absolute;
+        right: 3.5rem;
+        
+        & img{
+            transform: rotate(30deg);
+            width: 2.5rem;
+
+            transition: transform 500ms ease, scale 500ms ease;
+
+            &:hover{
+                transform: rotate(38deg);
+                scale: 1.1;
+            }
+        }
+    }
+
+    & .icon.flex{
+
+        & img:nth-child(1){
+            transform: rotate(-35deg);
+            position: relative;
+            bottom: 1rem;
+            left: 1.5rem;
+
+            width: 2rem;
+
+            transition: transform 500ms ease, scale 500ms ease;
+
+            &:hover{
+                transform: rotate(-15deg);
+                scale: 1.1;
+            }
+        }
+        & img:nth-child(2){
+            transform: rotate(15deg);
+            position: absolute;
+            right: 2rem;
+            bottom: 2.5rem;
+
+            width: 2.5rem;
+
+            transition: transform 500ms ease, scale 500ms ease;
+
+            &:hover{
+                transform: rotate(0deg);
+                scale: 1.1;
+            }
+        }
+    }
+    
+    & p{
+        text-align: center;
+        padding-block: 0.5rem;
+        width: 20rem;
+    }
+}
+
+.feature{
+    & header{
+        text-align: center;
+        position: relative;
+
+        & > div{
+            align-items: center;
+            justify-content: center;
+
+            & h2{
+                color: var(--text-primary);
+                font: var(--title-sm);
+                margin-bottom: 1rem;
+            }
+        }
+        & small{
+            position: absolute;
+            color: var(--text-secondary);
+            font: var(--text-sm);
+
+            left: 50%;
+            bottom: 1px;
+
+            width: 25rem;
+            transform: translate(-50%);
+        }
+    }
+}
+
+section + section{
+    margin-top: 2rem;
+}
+
+@media (width >= 80em){
+    #hero{
+        background: url(../assets/bg.png) no-repeat center top;
+        height: 50rem;
+
+        & header{
+            margin-inline: 7.5rem;
+        }
+
+        & > div{
+            margin-inline: auto;
+            margin-top: 10.25rem;
+            width: 41rem;
+        }
+    }
+
+    .about{
+        padding-block: 5rem ;
+        position: relative;
+        & .ico-book{
+            right: 50%;
+            transform: translate(50%);
+
+            & img{ 
+                width: 5.5rem;
+            }
+        }
+
+        & .icon.flex{
+            & img:nth-child(1){
+                transform: rotate(90deg);
+                bottom: 0.5rem;
+                left: 6.5rem;
+
+                width: 5rem;
+
+            &:hover{
+                transform: rotate(110deg);
+                scale: 1.1;
+            }
+            }
+            & img:nth-child(2){
+                transform: rotate(-15deg);
+                right: 2rem;
+                bottom: 6.5rem;
+
+                width: 4.5rem;
+
+            &:hover{
+                transform: rotate(0deg);
+                scale: 1.1;
+            }
+            }
+        }
+        
+        & p{
+            padding-block: 0.5rem;
+            font: var(--subtitle);
+            width: fit-content;
+        }
+        
+    }
+
+    section + section{
+        margin-top: 7.5rem;
+    }
+}
