@@ -235,6 +235,7 @@ section + section{
     }
 
     .feature{
+        padding-block: 5rem;
         & header{
             text-align: center;
             position: relative;
