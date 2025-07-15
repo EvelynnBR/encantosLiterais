@@ -12,12 +12,12 @@
     --text-md: 0.75rem/140% var(--font-family);
     --subtitle: 500 1rem/200% var(--font-family);
     --title-sm: 700 1.25rem/100% var(--font-family);
-    --text-sm: .875rem/140% var(--font-family);
+    --text-sm: 500 .875rem/140% var(--font-family);
+    --title-xs: 700 1rem/100% var(--font-family);
+    --text-xs: 700 0.75rem/140% var(--font-family);
     
     --title-md: 700 2.5rem/100% var(--font-family);
     --text-lg: 1.25rem/140% var(--font-family);
-    --title-xs: 700 1rem/100% var(--font-family);
-    --text-xs: .75rem/140% var(--font-family);
     --button: 700 .875rem/100% var(--font-family);
     --link: 500 .875rem/100% var(--font-family);
     --tags: 700 .625rem/100% var(--font-family);
@@ -55,11 +55,11 @@
         --subtitle: 500 2rem/200% var(--font-family);
         --title-sm: 700 2rem/100% var(--font-family);
         --text-sm: 1rem/140% var(--font-family);
-
-        --title-md: 700 2.5rem/100% var(--font-family);
         --title-xs: 700 1rem/100% var(--font-family);
+        --title-md: 700 2.5rem/100% var(--font-family);
+        --text-xs: 700 .75rem/140% var(--font-family);
+
         --text-lg: 1.25rem/140% var(--font-family);
-        --text-xs: .75rem/140% var(--font-family);
         --button: 700 .875rem/100% var(--font-family);
         --link: 500 .875rem/100% var(--font-family);
         --tags: 700 .625rem/100% var(--font-family);
