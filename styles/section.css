@@ -278,6 +278,9 @@
     & .cardPremium{
         position: relative;
         transition: transform 0.4s ease;
+        & .bunny{
+            display: none;
+        }
 
         & .semi-annual{
             justify-content: space-between;
@@ -573,6 +576,7 @@ section + section{
             }
 
             & .bunny{
+                display: grid;
                 position: absolute;
                 top: -3.2rem;
                 left: 50%;
