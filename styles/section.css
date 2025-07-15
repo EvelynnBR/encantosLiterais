@@ -185,7 +185,6 @@
 
         grid-template-columns: repeat(3, 17rem);
         gap: 1rem;
-        padding-left: 3rem;
         overflow-x: scroll;
 
         &::-webkit-scrollbar{
