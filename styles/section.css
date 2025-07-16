@@ -6,6 +6,12 @@
         justify-content: space-between;
         align-items: center;
 
+        & .logo{
+            background: url(../assets/icons/logo-mobile.svg) no-repeat left;
+            width: 4.5rem;
+            height: 3rem;
+        }
+
         & .btn-primary{
 
             &::after{
@@ -90,24 +96,25 @@
         text-align: center;
         position: relative;
         gap: .5rem;
-
+        
         & > div{
             align-items: center;
             gap: .75rem;
             justify-content: center;
-
+            
             & img{
                 width: 1.25rem;
             }
         }
         & small{
-
+            
             color: var(--text-secondary);
             font: var(--text-sm);
         }
     }
-
+    
     & .books{
+        filter:drop-shadow(0 0 10rem var(--pink-low));
         position: relative;
         margin-block: 4rem;
         height: 20rem;
@@ -172,7 +179,7 @@
 }
 
 .pricing{
-    background: url(../assets/pricing-background.png) no-repeat center top;
+    background: url(../assets/pricing-background.png) no-repeat top;
     height: 50rem;
 
     & h2{
@@ -361,6 +368,12 @@ section + section{
 
         & header{
             margin-inline: 7.5rem;
+
+            & .logo{
+                background: url(../assets/icons/logo-desktop.svg) no-repeat left;
+                width: 14.375rem;
+                height: 3.625rem
+            }
         }
 
         & > div{
@@ -464,6 +477,9 @@ section + section{
     }
 
     .pricing{
+        filter:
+        drop-shadow(0 0 10rem var(--shape-base));
+        margin-block: 15rem;
         & .cards {
             padding-top: 8rem;
             justify-content: center;
