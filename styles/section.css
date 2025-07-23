@@ -48,20 +48,12 @@
     & .ico-book{
         position: absolute;
         right: 3.5rem;
-
-        transform: scale(0);
-        opacity: 0;
-        animation: appearIcons 0.5s ease forwards;
-
-        animation-timeline: view();
-        animation-range: entry 3% cover 90%;
         
         & img{
             transform: rotate(30deg);
             width: 2.5rem;
-
-
-            transition: transform 500ms ease, scale 500ms ease;
+            opacity: 0;
+            transition: all 500ms ease, scale 500ms ease;
 
             &:hover{
                 transform: rotate(38deg);
@@ -76,16 +68,9 @@
             position: relative;
             bottom: 1rem;
             left: 1.5rem;
-
             width: 2rem;
-
-            transition: transform 500ms ease, scale 500ms ease;
-
-            transform: scale(0);
             opacity: 0;
-            animation: appearIcons 0.5s ease 0.5s forwards;
-            animation-timeline: view();
-            animation-range: entry 10rem 10rem;
+            transition: transform 500ms ease, scale 500ms ease;
 
             &:hover{
                 transform: rotate(-15deg);
@@ -97,19 +82,14 @@
             right: 2rem;
             bottom: 2.5rem;
             width: 2.5rem;
-
-
             opacity: 0;
-            animation: appearIcons 0.5s ease 1s forwards;
-            animation-timeline: view();
-            animation-range: entry 10rem 10rem;
             
+            transition: transform 500ms ease, scale 500ms ease;
             transform: rotate(15deg);
-            transition: all 500ms ease, scale 500ms ease;
 
             &:hover{
                 transform: rotate(0deg);
-                scale: 1.1;
+                transform: scale(1.1);
             }
         }
     }
@@ -118,14 +98,8 @@
         text-align: center;
         padding-block: 0.5rem;
         width: 20rem;
-
         font: var(--subtitle);
         color: var(--text-tertiary);
-
-        animation: apprearText 1000ms ease 0.5s forwards;
-        animation-timeline: view();
-        animation-range: entry 10rem 10rem;
-
         & strong{
             font-size: 1.5rem;
             font: var(--title-sm);
@@ -133,7 +107,15 @@
         }
     }
 }
-
+.book.appear{
+    animation: appearIcons 0.5s ease forwards;
+}
+.planchette{
+    animation: appearIcons 0.5s ease 0.5s forwards;
+}
+.crystalBall{
+    animation: appearIcons 0.5s ease 1s forwards;
+}
 @keyframes appearIcons{
     50%{
         transform: scale(0.5);
@@ -144,9 +126,12 @@
         opacity: 1;
     }
 }
+.textAnimation{
+    animation: apprearText 1000ms ease 0.5s forwards;
+}
 @keyframes apprearText{
     
-    100%{
+    0%{
         color: var(--text-primary);
     }
 }
